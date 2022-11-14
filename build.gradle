@@ -1,0 +1,25 @@
+plugins {
+    id 'application'
+}
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+group = 'de.pr1meti'
+version = 'v0.1.0'
+
+application {
+    mainClass.set 'de.pr1meti.chiffre.Vigenere'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
